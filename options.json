@@ -1,0 +1,110 @@
+{
+  "carOptions": {
+    "models": [
+      {
+        "name": "Sedan",
+        "basePrice": 25000
+      },
+      {
+        "name": "SUV",
+        "basePrice": 35000
+      },
+      {
+        "name": "Truck",
+        "basePrice": 40000
+      }
+    ],
+    "exterior": {
+      "colors": [
+        {
+          "name": "Black",
+          "price": 0
+        },
+        {
+          "name": "White",
+          "price": 0
+        },
+        {
+          "name": "Metallic Blue",
+          "price": 500
+        },
+        {
+          "name": "Red Pearl",
+          "price": 700
+        }
+      ],
+      "wheels": [
+        {
+          "name": "17-inch Standard",
+          "price": 0
+        },
+        {
+          "name": "18-inch Alloy",
+          "price": 800
+        },
+        {
+          "name": "19-inch Chrome",
+          "price": 1200
+        }
+      ],
+      "sunroof": [
+        {
+          "name": "No Sunroof",
+          "price": 0
+        },
+        {
+          "name": "Panoramic Sunroof",
+          "price": 1500
+        }
+      ]
+    },
+    "interior": {
+      "upholstery": [
+        {
+          "name": "Fabric",
+          "price": 0
+        },
+        {
+          "name": "Leather",
+          "price": 1500
+        },
+        {
+          "name": "Premium Leather",
+          "price": 2500
+        }
+      ],
+      "infotainment": [
+        {
+          "name": "Standard",
+          "price": 0
+        },
+        {
+          "name": "Upgraded Touchscreen",
+          "price": 1000
+        },
+        {
+          "name": "Premium Audio System",
+          "price": 2000
+        }
+      ]
+    },
+    "accessories": [
+      {
+        "name": "Roof Rack",
+        "price": 300
+      },
+      {
+        "name": "All-Weather Mats",
+        "price": 150
+      },
+      {
+        "name": "Rear Camera",
+        "price": 600
+      },
+      {
+        "name": "Towing Package",
+        "price": 1000
+      }
+    ]
+  }
+}
