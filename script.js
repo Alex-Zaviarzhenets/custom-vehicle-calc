@@ -17,7 +17,7 @@ fetch('/options.json')
         } else {
           totalCost -= priceValue;
         }
-        document.getElementById('endPrice').value = `$${totalCost.toFixed(2)} ${'total cost'}`;
+        document.getElementById('totalPrice').innerText = `$${totalCost.toFixed(2)} ${'total price'}`;
       });
     });
   })

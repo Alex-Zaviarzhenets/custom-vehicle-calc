@@ -1,11 +1,28 @@
 body {
   display: flex;
-  
+  flex-direction: row;
+  gap: 10px;
 }
 
 #divContainer {
   border: 1px solid black;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#totalPrice{
+  margin-top: 60px;
+  margin-left: 400px;
+  border: 1px solid black;
+  height: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+} 
