@@ -7,6 +7,7 @@ const server = http.createServer((req, res) => {
     res.end(html)
   } else if (req.url === '/style.css') {
     const style = fs.readFileSync('style.css');
+    res.setHeader('Content-Type', 'text/css');
     res.end(style)
   } else if (req.url === '/options.json') {
     const options = fs.readFileSync('options.json');
