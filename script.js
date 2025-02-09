@@ -69,6 +69,7 @@ function createCheckboxList(data) {
     </label>
   </div>
 
+  
     `
   )
 
