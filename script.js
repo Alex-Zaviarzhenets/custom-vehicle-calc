@@ -4,10 +4,10 @@ fetch('/options.json')
     const html = createCheckboxList(data);
     document.getElementById('checkbox-list').innerHTML = html;
 
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const inputs = document.querySelectorAll('input' );
     
     let totalCost = 0;
-    checkboxes.forEach(checkbox => {
+    inputs.forEach(checkbox => {
       checkbox.addEventListener('change', () => {
         const priceElement = checkbox.parentNode.getElementsByClassName('price')[0];
         const price = priceElement.textContent;
@@ -29,7 +29,7 @@ function createCheckboxList(data) {
   const modelList = models.map(model => `
     <div id='divContainer'>
       <label>
-        <input type="checkbox" name="model" value="${model.name}">
+        <input type="radio" name="model" value="${model.name}">
         ${model.name}${'------'}
         <span class="price">${model.basePrice}${'$'}</span>
       </label>
@@ -40,7 +40,7 @@ function createCheckboxList(data) {
   const colorList = exterior.colors.map(color => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${color.name}">
+      <input type="radio" name="color" value="${color.name}">
       ${color.name}${'------'}
       <span class="price">${color.price}${'$'}</span>
     </label>
@@ -51,7 +51,7 @@ function createCheckboxList(data) {
   const wheelsList = exterior.wheels.map(whell => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${whell.name}">
+      <input type="radio" name="wheel" value="${whell.name}">
       ${whell.name}${'------'}
       <span class="price">${whell.price}${'$'}</span>
     </label>
@@ -63,7 +63,7 @@ function createCheckboxList(data) {
   const sunroofList = exterior.sunroof.map(sunroof => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${sunroof.name}">
+      <input type="radio" name="sunroof" value="${sunroof.name}">
       ${sunroof.name}${'------'}
       <span class="price">${sunroof.price}${'$'}</span>
     </label>
@@ -76,7 +76,7 @@ function createCheckboxList(data) {
   const upholsteryList = interior.upholstery.map(upholstery => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${upholstery.name}">
+      <input type="radio" name="upholstery" value="${upholstery.name}">
       ${upholstery.name}${'------'}
       <span class="price">${upholstery.price}${'$'}</span>
     </label>
@@ -88,7 +88,7 @@ function createCheckboxList(data) {
   const infotainmentList = interior.infotainment.map(infotainment => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${infotainment.name}">
+      <input type="checkbox" name="infortainment" value="${infotainment.name}">
       ${infotainment.name}${'------'}
       <span class="price">${infotainment.price}${'$'}</span>
     </label>
@@ -99,7 +99,7 @@ function createCheckboxList(data) {
   const accessoriesList = accessories.map(accessories => `
   <div id='divContainer'>  
     <label>
-      <input type="checkbox" name="model" value="${accessories.name}">
+      <input type="checkbox" name="accesories" value="${accessories.name}">
       ${accessories.name}${'------'}
       <span class="price">${accessories.price}${'$'}</span>
     </label>
