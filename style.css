@@ -57,3 +57,7 @@ input[type="radio"], input[type="checkbox"] {
   transform: scale(1.1);
   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
 }
+
+input {
+  accent-color: #ffcc00;
+}
